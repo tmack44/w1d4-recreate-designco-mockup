@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    /*margin: 0 auto;*/
+    max-width: 960px;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    background-color: rgb(26, 194, 251);
+    /*transition: all 1s ease;*/
+    /*opacity: .1;*/
+}
+
+.col:hover {
+    /*opacity: 1;*/
+}
+
+.col:first-child {
+    background-color: rgb(173, 191, 174);
+}
+
+.col:last-child {
+    background-color: rgb(203, 145, 113);
+}
