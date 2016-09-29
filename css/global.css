@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
 
 img {
@@ -10,6 +11,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    font:  13px 'Roboto', sans-serif;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -18,14 +23,18 @@ html, body {
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: RGBA(247, 247, 247, 1.00);
+
 }
 
 .header-row {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 960px;
     border-top: 5px solid RGBA(255, 0, 0, 1.00);
+
 }
 
 .logo {
@@ -47,11 +56,11 @@ html, body {
 }
 
 .header-search {
- justify-content: flex-end;
+
 }
 
 .grid {
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     max-width: 960px;
     display: flex;
     justify-content: center;
@@ -60,66 +69,106 @@ html, body {
 }
 
 .tagline-container {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
+    text-align: center;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    width: 60%;
 }
 
 .tagline {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
+    color: RGBA(74, 74, 74, 1.00);
+    /*padding: 20px;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
 }
+    .tagline h1 {
+         font-weight: bold;
+    }
 
-.tagline h1 {
-
-}
-
-.tagline h2 {
-
-}
+    .tagline h2 {
+        font-weight: lighter;
+        color: RGBA(74, 74, 74, .9);
+    }
 
 .pic-container {
     display: flex;
+    max-width: 960px;
 }
 
 .col {
+    display: flex;
+    flex-direction: column;
+    /*margin: 5px;*/
+}
+
+.pic_container img {
     transition: all 1s ease;
     opacity: 1;
 }
 
-.col:hover {
-    opacity: .8;
+.pic_container img:hover {
+    opacity: .5;
 }
 
 .row {
+    display: flex;
+    margin: 5px;
+}
 
+#pic-1 {
+    width: 600px;
+    height: 300px;
+}
+
+#pic-2 {
+    width: 300px;
+    height: 200px;
+}
+
+#pic-3 {
+    width: 300px;
+    height: 134px;
+}
+
+#pic-4 {
+    width: 300px;
+    height: 200px;
+}
+
+#pic-5 {
+    width: 300px;
+    height: 251px;
 }
 
 .footer {
      max-width: 960px;
+     margin: 0 auto;
+     padding: 20px;
 }
 
 .new-section {
     width: 30%;
     float:left;
-    padding: 10px;
+    padding: 20px;
 
 }
 
 .new-section h2 {
-
+ color: red;
 }
 
 .layouts-section {
-
+    /*width: 70%;*/
+    padding: 20px;
 }
 
 .layouts-section h2 {
-    width: 70%;
+
 }
 
 .layouts-section p {
     columns: 3;
-    padding: 10px;
 }
